@@ -15,7 +15,7 @@ class Carrinho {
   }
 
   calculaTotal() {
-    this.subtotal = this.itens.reduce((acum, item) => acum + item.pegaValorTotalItem(), 0);
+    this.subtotal = this.itens.reduce((acum, item) => acum + item.somaTotalItens(), 0);
     return this.subtotal + this.frete;
   }
 
