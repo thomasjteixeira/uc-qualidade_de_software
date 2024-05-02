@@ -4,6 +4,7 @@ class Boleto {
     this.dataVencimento = dataVencimento;
     this.conta = conta;
     this.pago = false;
+    // this.status = 'ABERTO' || 'PAGO' || 'CANCELADO' || 'VENCIDO';
   }
 
   pagar() {
