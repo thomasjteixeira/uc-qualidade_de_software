@@ -1,0 +1,98 @@
+{
+    "clientName": "Thunder Client",
+    "collectionName": "gestao_boletos",
+    "collectionId": "ddb7ea06-f13f-4791-a0e3-9e557e42d9cd",
+    "dateExported": "2024-05-16T23:42:41.661Z",
+    "version": "1.2",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "6d8ef259-f813-47be-aa4a-5d9df6a22884",
+            "colId": "ddb7ea06-f13f-4791-a0e3-9e557e42d9cd",
+            "containerId": "",
+            "name": "criar conta",
+            "url": "http://localhost:3000/contas",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-05-16T22:24:56.661Z",
+            "modified": "2024-05-16T22:52:15.488Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\r\n  \"saldo\": 1000,\r\n  \"numeroConta\": \"11145-6\",\r\n  \"nomeBanco\": \"ITAU\"\r\n}\r\n",
+                "form": []
+            }
+        },
+        {
+            "_id": "e02cf661-f5b5-44c5-a90c-e81370ad2263",
+            "colId": "ddb7ea06-f13f-4791-a0e3-9e557e42d9cd",
+            "containerId": "",
+            "name": "criar boleto",
+            "url": "http://localhost:3000/1/boletos",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2024-05-16T22:35:42.517Z",
+            "modified": "2024-05-16T22:52:43.002Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"valor\": 500,\n  \"dataVencimento\": \"2024-06-01\"\n}\n",
+                "form": []
+            }
+        },
+        {
+            "_id": "3cf79649-4640-46d9-9d01-fb67b3ed2470",
+            "colId": "ddb7ea06-f13f-4791-a0e3-9e557e42d9cd",
+            "containerId": "",
+            "name": "listar contas",
+            "url": "http://localhost:3000/contas",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2024-05-16T22:47:36.960Z",
+            "modified": "2024-05-16T22:52:18.622Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"saldo\": 1000,\n  \"numeroConta\": \"11145-6\",\n  \"nomeBanco\": \"ITAU\"\n}\n",
+                "form": []
+            }
+        },
+        {
+            "_id": "958c0fe9-d7ba-4ca0-a9c2-a7f183f3b8ab",
+            "colId": "ddb7ea06-f13f-4791-a0e3-9e557e42d9cd",
+            "containerId": "",
+            "name": "pagar boleto",
+            "url": "http://localhost:3000/boletos/2/pagar",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2024-05-16T22:41:38.584Z",
+            "modified": "2024-05-16T22:52:56.220Z",
+            "headers": []
+        },
+        {
+            "_id": "c8f2432f-2616-4099-ad10-3cf1e21cca13",
+            "colId": "ddb7ea06-f13f-4791-a0e3-9e557e42d9cd",
+            "containerId": "",
+            "name": "lista boletos",
+            "url": "http://localhost:3000/boletos",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2024-05-16T22:51:24.067Z",
+            "modified": "2024-05-16T23:01:17.264Z",
+            "headers": []
+        },
+        {
+            "_id": "05945e17-6f7b-483b-8fe0-710eadfbc10a",
+            "colId": "ddb7ea06-f13f-4791-a0e3-9e557e42d9cd",
+            "containerId": "",
+            "name": "cancelar boleto",
+            "url": "http://localhost:3000/boletos/2/cancelar",
+            "method": "POST",
+            "sortNum": 40000,
+            "created": "2024-05-16T22:44:15.092Z",
+            "modified": "2024-05-16T23:42:07.507Z",
+            "headers": []
+        }
+    ],
+    "ref": "8a4Hc7jHgbWxsLyt2nn-0M83FwLwDpxJGbq2tX1lIrCqWx6B1FKT0yyg6xUjcBLM7WOf0vGA5u7GjhoBpbJDTQ"
+}
