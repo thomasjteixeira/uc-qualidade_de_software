@@ -16,6 +16,11 @@ describe('API Tests - Boletos', () => {
       });
 
     contaId = contaResponse.body.conta.id;
+
+    const boletoResponse = await request(app)
+      .post(`/${contaId}/boletos`)
+      .send({ valor: 200, dataVencimento: '2024-12-31' });
+    boletoId = boletoResponse.body.boleto.id;
   });
 
   test('Criar um novo boleto', async () => {

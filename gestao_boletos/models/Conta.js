@@ -39,12 +39,7 @@ class Conta {
     console.log(`-----------------------------------------`);
   }
 
-  // Método toJSON que será chamado quando o objeto for serializado para JSON
-  // A serialização é o processo de transformar um objeto em uma string que pode ser armazenada ou transmitida.
-  // No caso de JavaScript, a serialização geralmente se refere à conversão de um objeto JavaScript em uma string JSON.
-  // Este método controla como o objeto é serializado, retornando um novo objeto que contém apenas as propriedades que queremos incluir na string JSON.
   toJSON() {
-    // Retorna um novo objeto contendo apenas as propriedades que queremos incluir na string JSON
     return {
       id: this.id,
       saldo: this.saldo,
