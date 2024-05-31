@@ -1,5 +1,5 @@
-const Conta = require('../Conta.js');
-const Boleto = require('../Boleto.js');
+const Conta = require('../../Conta.js');
+const Boleto = require('../../Boleto.js');
 
 describe('Testes para a classe Conta', () => {
   let conta;

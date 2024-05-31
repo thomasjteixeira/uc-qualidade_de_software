@@ -2,6 +2,12 @@ class Boleto {
   static currentId = 1;
 
   constructor(valor, dataVencimento, conta) {
+    if (!valor) {
+      throw new Error('Valor do boleto é obrigatório.');
+    }
+    if (!dataVencimento) {
+      throw new Error('Data de vencimento do boleto é obrigatória.');
+    }
     if (!conta) {
       throw new Error('Boleto deve estar associado a uma conta.');
     }

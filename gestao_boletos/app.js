@@ -1,17 +1,12 @@
 const express = require('express');
 const Boleto = require('./Boleto');
 const Conta = require('./Conta');
-const seedContas = require('./seed');  // Importar contas do seed.js
 
 const app = express();
-const port = 3000;
+const contas = [];
 
 app.use(express.json());
 
-// Seeds são dados iniciais que são carregados no banco de dados durante o desenvolvimento ou testes.
-// Eles são úteis para preencher o banco de dados com dados de exemplo para testar a aplicação durante o desenvolvimento.
-// Como não temos o banco de dados ainda, vamos usar um array de contas e boletos que está no arquivo seed.js
-const contas = seedContas; 
 
 // Criar uma nova conta
 app.post('/contas', (req, res) => {
@@ -92,6 +87,4 @@ app.get('/boletos', (req, res) => {
   res.status(200).send(boletos);
 });
 
-app.listen(port, () => {
-  console.log(`Servidor rodando na porta ${port}`);
-});
+module.exports = app;
